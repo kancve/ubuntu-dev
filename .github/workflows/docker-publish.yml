@@ -93,4 +93,6 @@ jobs:
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.15
         with:
+          name: ${{ github.repository }}:${{ github.ref_name }}
+          draft: true
           files: ${{ steps.pull_image.outputs.gzipname }}
