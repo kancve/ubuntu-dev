@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     net-tools \
     iputils-ping \
-	apache2-utils \
-	maven \
+    apache2-utils \
+    maven \
     openjdk-8-jdk-headless
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 LANG=C.UTF-8

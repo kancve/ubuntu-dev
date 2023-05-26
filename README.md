@@ -20,6 +20,11 @@ In addition, it will include some common development tools:
 
 [Vscode](https://code.visualstudio.com/) can be remotely connected to the container through ``Connect to Host...`` or ``Attach to Running Container...``, provided that you have installed the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) plugin.
 
+SSH remote connection username and password:
+
+username: root
+password: kancve
+
 ## net-tools
 
 NET-3 networking toolkit
@@ -48,6 +53,6 @@ Provides some add-on programs useful for any web server. These include:
 
 # Build
 
-**`bash
+```bash
 docker build -t ubuntu-dev --build-arg VERSION=22.04
-**`
+```
