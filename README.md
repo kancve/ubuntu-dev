@@ -1,4 +1,4 @@
-# Introduction
+# ubuntu-dev [![](https://github.com/kancve/ubuntu-dev/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/kancve/ubuntu-dev/actions)
 
 A docker development environment that includes C++ & Java.
 
@@ -53,6 +53,13 @@ Provides some add-on programs useful for any web server. These include:
 
 # Build
 
-```bash
+```
 docker build -t ubuntu-dev --build-arg VERSION=22.04
+```
+
+Of course, you can also directly pull the automatically built image from this library:
+
+```
+docker pull ghcr.io/kancve/ubuntu-dev
+docker pull kancve/ubuntu-dev
 ```
