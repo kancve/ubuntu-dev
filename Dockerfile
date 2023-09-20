@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y \
     maven \
     openjdk-8-jdk-headless
 
+# install python
+RUN apt-get install -y python3 python3-pip
+
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 LANG=C.UTF-8
 ENV PATH=$PATH:$JAVA_HOME/bin
 
