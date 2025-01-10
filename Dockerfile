@@ -26,7 +26,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 LANG=C.UTF-8
 ENV PATH=$PATH:$JAVA_HOME/bin
 
 # turn on ssh service
-RUN sed -i "s?prohibit-password?yes?g" /etc/ssh/sshd_config && \
+RUN echo "PermitRootLogin yes" > /etc/ssh/sshd_config.d/login.conf && \
     echo "root:kancve" | chpasswd && \
     mkdir -p /var/run/sshd
 
